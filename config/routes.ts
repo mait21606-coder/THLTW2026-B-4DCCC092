@@ -42,7 +42,32 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+{
+		path: '/quan-ly-san-pham',
+		name: 'QuanLySanPham',
+		icon: 'AppstoreAddOutlined',
+		component: './QuanLySanPham',
+	},
+	{
+		path: '/quan-ly-don-hang',
+		name: 'QuanLyDonHang',
+		icon: 'AppstoreAddOutlined',
+		component: './QuanLyDonHang',
+	},
+	{
+		path: '/tro-choi-doan-so',
+		name: 'TroChoiDoanSo',
+		icon: 'RocketOutlined',
+		component: './TH01/Bai1_TroChoiDoanSo',
+	},
+	{
+		path: '/quan-ly-tien-do',
+		name: 'QuanLyTienDo',
+		icon: 'ReadOutlined',
+		component: './TH01/Bai2_QuanLyTienDo',
+	},
 
+	///////////////////////////////////
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
