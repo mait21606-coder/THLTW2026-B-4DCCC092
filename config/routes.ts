@@ -42,7 +42,20 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-
+	{
+		path: '/quan-ly-san-pham',
+		name: 'QuanLySanPham',
+		icon: 'AppstoreAddOutlined',
+		component: './QuanLySanPham',
+	},
+	{
+		path: '/quan-ly-don-hang',
+		name: 'QuanLyDonHang',
+		icon: 'AppstoreAddOutlined',
+		component: './QuanLyDonHang',
+	},
+	///////////////////////////////////
+	///////////////////////////////////
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
