@@ -42,7 +42,10 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-
+        path: '/th03',
+		name: 'TH03',
+		icon: 'AppstoreAddOutlined',
+		component: './ungdungcuttoc',
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
