@@ -42,7 +42,10 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
-
+        path: '/quan-ly-van-bang',
+		name: 'Quản lý văn bằng',
+		icon: 'AuditOutlined',
+		component: './QuanLyVanBang',
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
