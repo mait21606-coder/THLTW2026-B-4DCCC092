@@ -1,4 +1,5 @@
-﻿export default [
+﻿﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -15,7 +16,6 @@
 			},
 		],
 	},
-
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
@@ -42,20 +42,26 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		name: 'TH02',
+		path: '/th02',
+		icon: 'FolderOutlined',
+		routes: [
+			{
+				path: '/th02/bai-1',
+				name: 'Bài 1',
+				icon: 'PlayCircleOutlined',
+				component: './Bai1',
+			},
+			{
+				path: '/th02/bai-2',
+				name: 'Bài 2',
+				icon: 'BookOutlined',
+				component: './Bai2',
+			},
+		],
+	},
 
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
 
 	{
 		path: '/notification',
@@ -78,6 +84,33 @@
 		],
 		layout: false,
 		hideInMenu: true,
+	},
+	{
+		path: '/quan-ly-clb',
+		name: 'Quản lý Câu lạc bộ',
+		icon: 'TeamOutlined',
+		routes: [
+			{
+				path: '/quan-ly-clb/cau-lac-bo',
+				name: 'Danh sách CLB',
+				component: './QuanLyCauLacBo/CauLacBo',
+			},
+			{
+				path: '/quan-ly-clb/don-dang-ky',
+				name: 'Đơn đăng ký',
+				component: './QuanLyCauLacBo/DonDangKy',
+			},
+			{
+				path: '/quan-ly-clb/thanh-vien',
+				name: 'Thành viên CLB',
+				component: './QuanLyCauLacBo/ThanhVien',
+			},
+			{
+				path: '/quan-ly-clb/bao-cao',
+				name: 'Báo cáo thống kê',
+				component: './QuanLyCauLacBo/BaoCao',
+			},
+		]
 	},
 	{
 		path: '/',
