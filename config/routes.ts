@@ -15,7 +15,6 @@
 			},
 		],
 	},
-
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
@@ -42,20 +41,30 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		name: 'TH02',
+		path: '/th02',
+		icon: 'FolderOutlined',
+		routes: [
+			{
+				path: '/th02/bai-1',
+				name: 'Bài 1',
+				icon: 'PlayCircleOutlined',
+				component: './Bai1',
+			},
+			{
+				path: '/th02/bai-2',
+				name: 'Bài 2',
+				icon: 'BookOutlined',
+				component: './Bai2',
+			},
+		],
+		path: '/travel-app',
+		name: 'Travel App',
+		icon: 'CompassOutlined',
+		component: './TravelApp',
+	},
 
-	// DANH MUC HE THONG
-	// {
-	// 	name: 'DanhMuc',
-	// 	path: '/danh-muc',
-	// 	icon: 'copy',
-	// 	routes: [
-	// 		{
-	// 			name: 'ChucVu',
-	// 			path: 'chuc-vu',
-	// 			component: './DanhMuc/ChucVu',
-	// 		},
-	// 	],
-	// },
 
 	{
 		path: '/notification',
