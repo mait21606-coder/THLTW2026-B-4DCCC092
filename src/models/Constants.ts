@@ -1,0 +1,4 @@
+export const KHOA_LUU_TRU_CLB = {
+  DANH_SACH_CLB: 'CLB_DATA',
+  DON_DANG_KY: 'CLB_REGISTRATIONS',
+};

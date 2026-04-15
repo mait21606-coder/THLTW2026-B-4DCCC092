@@ -15,7 +15,6 @@
 			},
 		],
 	},
-
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
@@ -42,6 +41,14 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		path: '/giua-ky',
+		name: 'Bài kiểm tra giữa kỳ',
+		icon: 'CompassOutlined',
+		component: './GiuaKy',
+	},
+
+
 
 	// DANH MUC HE THONG
 	// {
@@ -56,7 +63,6 @@
 	// 		},
 	// 	],
 	// },
-
 	{
 		path: '/notification',
 		routes: [
