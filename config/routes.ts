@@ -1,4 +1,7 @@
-﻿export default [
+﻿﻿export default [
+﻿import path from "path";
+
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -15,7 +18,6 @@
 			},
 		],
 	},
-
 	///////////////////////////////////
 	// DEFAULT MENU
 	{
@@ -42,6 +44,12 @@
 		icon: 'OrderedListOutlined',
 		component: './TodoList',
 	},
+	{
+		path: '/task',
+		name: 'Task',
+		icon: 'CheckSquareOutlined',
+		component: './Task',
+	},
 
 	// DANH MUC HE THONG
 	// {
@@ -56,7 +64,6 @@
 	// 		},
 	// 	],
 	// },
-
 	{
 		path: '/notification',
 		routes: [
