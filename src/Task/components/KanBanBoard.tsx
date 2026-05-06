@@ -4,7 +4,6 @@ const KanbanBoard: React.FC<KanbanBoardProps> = ({ tasks, onUpdateStatus, onEdit
     const { destination, source, draggableId } = result;
     if (!destination) return;
     
-    // Chỉ cập nhật nếu vị trí thay đổi (khác cột)
     if (destination.droppableId !== source.droppableId) {
       onUpdateStatus(draggableId, destination.droppableId as Status);
     }

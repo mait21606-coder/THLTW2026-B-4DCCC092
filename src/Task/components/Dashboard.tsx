@@ -9,7 +9,6 @@ interface DashboardProps {
 }
 
 const Dashboard: React.FC<DashboardProps> = ({ tasks }) => {
-  // Tối ưu hóa việc tính toán các con số thống kê
   const stats = useMemo(() => {
     const total = tasks.length;
     const completed = tasks.filter((t) => t.status === 'done').length;

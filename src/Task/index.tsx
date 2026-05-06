@@ -26,7 +26,6 @@ const TaskPage: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [editingTask, setEditingTask] = useState<Task | undefined>(undefined);
 
-  // Load tasks from localStorage on mount
   useEffect(() => {
     const savedTasks = localStorage.getItem('tasks');
     if (savedTasks) {
@@ -37,8 +36,7 @@ const TaskPage: React.FC = () => {
       }
     }
   }, []);
-
-  // Save tasks to localStorage whenever they change
+  
   useEffect(() => {
     localStorage.setItem('tasks', JSON.stringify(tasks));
   }, [tasks]);

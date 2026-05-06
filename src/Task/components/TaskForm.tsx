@@ -3,7 +3,7 @@ import { Modal, Form, Input, DatePicker, Select } from 'antd';
 import moment from 'moment';
 
 interface TaskFormProps {
-  visible: boolean; // Đổi thành 'open' nếu dùng Antd v5
+  visible: boolean;
   onCancel: () => void;
   onFinish: (values: any) => void;
   initialValues?: any;
@@ -27,7 +27,6 @@ const TaskForm: React.FC<TaskFormProps> = ({ visible, onCancel, onFinish, initia
 
   const handleSubmit = () => {
     form.validateFields().then((values) => {
-      // Convert deadline về string định dạng YYYY-MM-DD trước khi gửi ra ngoài
       const formattedValues = {
         ...values,
         deadline: values.deadline ? values.deadline.format('YYYY-MM-DD') : null,
@@ -39,13 +38,13 @@ const TaskForm: React.FC<TaskFormProps> = ({ visible, onCancel, onFinish, initia
   return (
     <Modal
       title={initialValues ? 'Chỉnh sửa công việc' : 'Thêm công việc mới'}
-      visible={visible} // Antd v5 dùng 'open'
+      visible={visible} 
       onCancel={onCancel}
       onOk={handleSubmit}
       okText={initialValues ? 'Cập nhật' : 'Thêm'}
       cancelText="Hủy"
       destroyOnClose
-      maskClosable={false} // Tránh bấm nhầm ra ngoài làm mất dữ liệu đang nhập
+      maskClosable={false}
     >
       <Form form={form} layout="vertical">
         <Form.Item

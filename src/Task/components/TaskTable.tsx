@@ -11,7 +11,6 @@ interface TaskTableProps {
   onDelete: (id: string) => void;
 }
 
-// 1. Tách cấu hình Mapping ra ngoài
 const STATUS_MAP: Record<string, { text: string; color: string }> = {
   todo: { text: 'To Do', color: 'default' },
   'in-progress': { text: 'In Progress', color: 'processing' },
@@ -27,7 +26,6 @@ const PRIORITY_COLORS: Record<string, string> = {
 const TaskTable: React.FC<TaskTableProps> = ({ tasks, onEdit, onDelete }) => {
   const searchInput = useRef<InputRef>(null);
 
-  // 2. Helper tạo search props để làm gọn columns
   const getColumnSearchProps = (dataIndex: keyof Task) => ({
     filterDropdown: ({ setSelectedKeys, selectedKeys, confirm, clearFilters }: any) => (
       <div style={{ padding: 8 }} onKeyDown={(e) => e.stopPropagation()}>
@@ -67,7 +65,6 @@ const TaskTable: React.FC<TaskTableProps> = ({ tasks, onEdit, onDelete }) => {
     },
   });
 
-  // 3. Định nghĩa Columns rõ ràng
   const columns: ColumnsType<Task> = [
     {
       title: 'Tên công việc',
